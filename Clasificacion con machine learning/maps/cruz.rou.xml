@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-02-26 16:35:28 by Eclipse SUMO duarouter Version 1.17.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="cruz.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="cruz.rou.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="200"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="taxi" vClass="taxi"/>
+    <vType id="bus" vClass="bus"/>
+    <vType id="motorcycle" vClass="motorcycle"/>
+    <vehicle id="2" type="taxi" depart="2.00">
+        <route edges="E2 E3"/>
+    </vehicle>
+    <vehicle id="3" type="taxi" depart="3.00">
+        <route edges="E5 -E1"/>
+    </vehicle>
+    <vehicle id="4" type="taxi" depart="4.00">
+        <route edges="-E7 -E6 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="7" type="taxi" depart="7.00">
+        <route edges="E1"/>
+    </vehicle>
+    <vehicle id="9" type="taxi" depart="9.00">
+        <route edges="E4 E5 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="10" type="taxi" depart="10.00">
+        <route edges="E4 E5 E2 E3"/>
+    </vehicle>
+    <vehicle id="11" type="taxi" depart="11.00">
+        <route edges="-E6 -E1"/>
+    </vehicle>
+    <vehicle id="13" type="taxi" depart="13.00">
+        <route edges="-E2 -E1"/>
+    </vehicle>
+    <vehicle id="14" type="taxi" depart="14.00">
+        <route edges="E5 E2"/>
+    </vehicle>
+    <vehicle id="15" type="taxi" depart="15.00">
+        <route edges="E4 E5 E2 E3"/>
+    </vehicle>
+    <vehicle id="16" type="taxi" depart="16.00">
+        <route edges="E0 E1 E6 E7"/>
+    </vehicle>
+    <vehicle id="18" type="taxi" depart="18.00">
+        <route edges="E4 E5 E2"/>
+    </vehicle>
+    <vehicle id="21" type="taxi" depart="21.00">
+        <route edges="-E3 -E2 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="23" type="taxi" depart="23.00">
+        <route edges="-E2 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="24" type="taxi" depart="24.00">
+        <route edges="E1 -E5"/>
+    </vehicle>
+    <vehicle id="27" type="taxi" depart="27.00">
+        <route edges="E1 E2"/>
+    </vehicle>
+    <vehicle id="29" type="taxi" depart="29.00">
+        <route edges="-E2 -E5"/>
+    </vehicle>
+    <vehicle id="31" type="taxi" depart="31.00">
+        <route edges="E0 E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="32" type="bus" depart="32.00">
+        <route edges="E5"/>
+    </vehicle>
+    <vehicle id="33" type="bus" depart="33.00">
+        <route edges="-E3 -E2 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="34" type="bus" depart="34.00">
+        <route edges="-E5 -E4"/>
+    </vehicle>
+    <vehicle id="35" type="bus" depart="35.00">
+        <route edges="-E3 -E2 E6 E7"/>
+    </vehicle>
+    <vehicle id="37" type="bus" depart="37.00">
+        <route edges="E1 -E5"/>
+    </vehicle>
+    <vehicle id="40" type="bus" depart="40.00">
+        <route edges="E0 E1 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="41" type="bus" depart="41.00">
+        <route edges="E1 E6"/>
+    </vehicle>
+    <vehicle id="44" type="bus" depart="44.00">
+        <route edges="-E2 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="49" type="bus" depart="49.00">
+        <route edges="E6"/>
+    </vehicle>
+    <vehicle id="57" type="bus" depart="57.00">
+        <route edges="E5 E6"/>
+    </vehicle>
+    <vehicle id="64" type="bus" depart="64.00">
+        <route edges="E5"/>
+    </vehicle>
+    <vehicle id="66" type="bus" depart="66.00">
+        <route edges="E5 E6 E7"/>
+    </vehicle>
+    <vehicle id="69" type="bus" depart="69.00">
+        <route edges="E4 E5 -E1"/>
+    </vehicle>
+    <vehicle id="73" type="bus" depart="73.00">
+        <route edges="E0 E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="74" type="bus" depart="74.00">
+        <route edges="-E3 -E2 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="77" type="bus" depart="77.00">
+        <route edges="-E2"/>
+    </vehicle>
+    <vehicle id="78" type="bus" depart="78.00">
+        <route edges="-E6 E2"/>
+    </vehicle>
+    <vehicle id="79" type="bus" depart="79.00">
+        <route edges="-E3 -E2"/>
+    </vehicle>
+    <vehicle id="81" type="bus" depart="81.00">
+        <route edges="-E3 -E2 E6"/>
+    </vehicle>
+    <vehicle id="82" type="bus" depart="82.00">
+        <route edges="E5 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="84" type="motorcycle" depart="84.00">
+        <route edges="-E3 -E2 -E1"/>
+    </vehicle>
+    <vehicle id="89" type="motorcycle" depart="89.00">
+        <route edges="-E7 -E6"/>
+    </vehicle>
+    <vehicle id="90" type="motorcycle" depart="90.00">
+        <route edges="E2 E3"/>
+    </vehicle>
+    <vehicle id="92" type="motorcycle" depart="92.00">
+        <route edges="-E6 -E5"/>
+    </vehicle>
+    <vehicle id="95" type="motorcycle" depart="95.00">
+        <route edges="-E7 -E6 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="96" type="motorcycle" depart="96.00">
+        <route edges="-E3 -E2 E6 E7"/>
+    </vehicle>
+    <vehicle id="99" type="motorcycle" depart="99.00">
+        <route edges="E6"/>
+    </vehicle>
+    <vehicle id="100" type="motorcycle" depart="100.00">
+        <route edges="E6 E7"/>
+    </vehicle>
+    <vehicle id="101" type="motorcycle" depart="101.00">
+        <route edges="E5 -E1"/>
+    </vehicle>
+    <vehicle id="103" type="motorcycle" depart="103.00">
+        <route edges="-E6 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="106" type="motorcycle" depart="106.00">
+        <route edges="-E7 -E6"/>
+    </vehicle>
+    <vehicle id="107" type="motorcycle" depart="107.00">
+        <route edges="E6 E7"/>
+    </vehicle>
+    <vehicle id="108" type="motorcycle" depart="108.00">
+        <route edges="E0 E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="109" type="motorcycle" depart="109.00">
+        <route edges="-E2 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="111" type="motorcycle" depart="111.00">
+        <route edges="E0 E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="113" type="motorcycle" depart="113.00">
+        <route edges="E0 E1 E6"/>
+    </vehicle>
+    <vehicle id="114" type="motorcycle" depart="114.00">
+        <route edges="-E2 E6 E7"/>
+    </vehicle>
+    <vehicle id="116" type="motorcycle" depart="116.00">
+        <route edges="E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="117" type="motorcycle" depart="117.00">
+        <route edges="-E3 -E2 -E1"/>
+    </vehicle>
+    <vehicle id="119" type="motorcycle" depart="119.00">
+        <route edges="E1 E2"/>
+    </vehicle>
+    <vehicle id="120" type="motorcycle" depart="120.00">
+        <route edges="-E7 -E6 E2"/>
+    </vehicle>
+    <vehicle id="121" type="motorcycle" depart="121.00">
+        <route edges="E0 E1 E6 E7"/>
+    </vehicle>
+    <vehicle id="123" type="motorcycle" depart="123.00">
+        <route edges="-E3 -E2 -E5"/>
+    </vehicle>
+    <vehicle id="127" type="motorcycle" depart="127.00">
+        <route edges="E6 E7"/>
+    </vehicle>
+    <vehicle id="130" type="motorcycle" depart="130.00">
+        <route edges="E5 E6"/>
+    </vehicle>
+    <vehicle id="131" type="taxi" depart="131.00">
+        <route edges="-E6 -E1"/>
+    </vehicle>
+    <vehicle id="132" type="taxi" depart="132.00">
+        <route edges="E5 E2 E3"/>
+    </vehicle>
+    <vehicle id="133" type="taxi" depart="133.00">
+        <route edges="E1 E6 E7"/>
+    </vehicle>
+    <vehicle id="136" type="taxi" depart="136.00">
+        <route edges="E1 E6 E7"/>
+    </vehicle>
+    <vehicle id="137" type="taxi" depart="137.00">
+        <route edges="-E2 -E1"/>
+    </vehicle>
+    <vehicle id="141" type="taxi" depart="141.00">
+        <route edges="E1 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="143" type="taxi" depart="143.00">
+        <route edges="E5 -E1"/>
+    </vehicle>
+    <vehicle id="144" type="taxi" depart="144.00">
+        <route edges="-E7 -E6 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="146" type="taxi" depart="146.00">
+        <route edges="E1 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="148" type="taxi" depart="148.00">
+        <route edges="-E7 -E6 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="152" type="taxi" depart="152.00">
+        <route edges="-E2 -E1"/>
+    </vehicle>
+    <vehicle id="154" type="taxi" depart="154.00">
+        <route edges="E4 E5 E6"/>
+    </vehicle>
+    <vehicle id="156" type="taxi" depart="156.00">
+        <route edges="-E3 -E2 -E1"/>
+    </vehicle>
+    <vehicle id="157" type="taxi" depart="157.00">
+        <route edges="E4 E5 E6"/>
+    </vehicle>
+    <vehicle id="158" type="taxi" depart="158.00">
+        <route edges="-E6 E2"/>
+    </vehicle>
+    <vehicle id="159" type="taxi" depart="159.00">
+        <route edges="-E2 E6 E7"/>
+    </vehicle>
+    <vehicle id="160" type="taxi" depart="160.00">
+        <route edges="E5 E6 E7"/>
+    </vehicle>
+    <vehicle id="161" type="taxi" depart="161.00">
+        <route edges="E4 E5 E6"/>
+    </vehicle>
+    <vehicle id="164" type="taxi" depart="164.00">
+        <route edges="E4 E5 E6"/>
+    </vehicle>
+    <vehicle id="166" type="taxi" depart="166.00">
+        <route edges="E4 E5 -E1"/>
+    </vehicle>
+    <vehicle id="167" type="taxi" depart="167.00">
+        <route edges="E5 E6"/>
+    </vehicle>
+    <vehicle id="169" type="taxi" depart="169.00">
+        <route edges="-E7 -E6 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="174" type="taxi" depart="174.00">
+        <route edges="E1 -E5"/>
+    </vehicle>
+    <vehicle id="181" type="taxi" depart="181.00">
+        <route edges="E1"/>
+    </vehicle>
+    <vehicle id="185" type="taxi" depart="185.00">
+        <route edges="E0 E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="186" type="taxi" depart="186.00">
+        <route edges="E2 E3"/>
+    </vehicle>
+    <vehicle id="187" type="taxi" depart="187.00">
+        <route edges="-E6 -E1 -E0"/>
+    </vehicle>
+    <vehicle id="188" type="taxi" depart="188.00">
+        <route edges="E1 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="191" type="taxi" depart="191.00">
+        <route edges="-E5"/>
+    </vehicle>
+    <vehicle id="192" type="taxi" depart="192.00">
+        <route edges="-E6 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="195" type="taxi" depart="195.00">
+        <route edges="E5 E2"/>
+    </vehicle>
+</routes>

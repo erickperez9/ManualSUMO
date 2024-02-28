@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-02-26 16:35:28 by Eclipse SUMO duarouter Version 1.17.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="cruz.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="cruz.rou.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="200"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="taxi" vClass="taxi"/>
+    <vehicle id="2" type="taxi" depart="2.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="3" type="taxi" depart="3.00">
+        <routeDistribution last="0">
+            <route cost="14.75" probability="1.00000000" edges="E5 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="4" type="taxi" depart="4.00">
+        <routeDistribution last="0">
+            <route cost="31.05" probability="1.00000000" edges="-E7 -E6 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="7" type="taxi" depart="7.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="9" type="taxi" depart="9.00">
+        <routeDistribution last="0">
+            <route cost="29.16" probability="1.00000000" edges="E4 E5 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="10" type="taxi" depart="10.00">
+        <routeDistribution last="0">
+            <route cost="31.05" probability="1.00000000" edges="E4 E5 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="11" type="taxi" depart="11.00">
+        <routeDistribution last="0">
+            <route cost="16.64" probability="1.00000000" edges="-E6 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="13" type="taxi" depart="13.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="-E2 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="14" type="taxi" depart="14.00">
+        <routeDistribution last="0">
+            <route cost="16.64" probability="1.00000000" edges="E5 E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="15" type="taxi" depart="15.00">
+        <routeDistribution last="0">
+            <route cost="31.05" probability="1.00000000" edges="E4 E5 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="16" type="taxi" depart="16.00">
+        <routeDistribution last="0">
+            <route cost="29.16" probability="1.00000000" edges="E0 E1 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="18" type="taxi" depart="18.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="E4 E5 E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="21" type="taxi" depart="21.00">
+        <routeDistribution last="0">
+            <route cost="29.16" probability="1.00000000" edges="-E3 -E2 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="23" type="taxi" depart="23.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="-E2 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="24" type="taxi" depart="24.00">
+        <routeDistribution last="0">
+            <route cost="16.64" probability="1.00000000" edges="E1 -E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="27" type="taxi" depart="27.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="E1 E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="29" type="taxi" depart="29.00">
+        <routeDistribution last="0">
+            <route cost="14.75" probability="1.00000000" edges="-E2 -E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="31" type="taxi" depart="31.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="E0 E1 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="32" type="taxi" depart="32.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="33" type="taxi" depart="33.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="-E3 -E2 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="34" type="taxi" depart="34.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="-E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="35" type="taxi" depart="35.00">
+        <routeDistribution last="0">
+            <route cost="31.05" probability="1.00000000" edges="-E3 -E2 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="37" type="taxi" depart="37.00">
+        <routeDistribution last="0">
+            <route cost="16.64" probability="1.00000000" edges="E1 -E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="40" type="taxi" depart="40.00">
+        <routeDistribution last="0">
+            <route cost="31.05" probability="1.00000000" edges="E0 E1 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="41" type="taxi" depart="41.00">
+        <routeDistribution last="0">
+            <route cost="14.75" probability="1.00000000" edges="E1 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="44" type="taxi" depart="44.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="-E2 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="49" type="taxi" depart="49.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="57" type="taxi" depart="57.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="E5 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="64" type="taxi" depart="64.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="66" type="taxi" depart="66.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="E5 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="69" type="taxi" depart="69.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="E4 E5 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="73" type="taxi" depart="73.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="E0 E1 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="74" type="taxi" depart="74.00">
+        <routeDistribution last="0">
+            <route cost="29.16" probability="1.00000000" edges="-E3 -E2 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="77" type="taxi" depart="77.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="-E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="78" type="taxi" depart="78.00">
+        <routeDistribution last="0">
+            <route cost="14.75" probability="1.00000000" edges="-E6 E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="79" type="taxi" depart="79.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="-E3 -E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="81" type="taxi" depart="81.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="-E3 -E2 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="82" type="taxi" depart="82.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="E5 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="84" type="taxi" depart="84.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="-E3 -E2 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="89" type="taxi" depart="89.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="-E7 -E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="90" type="taxi" depart="90.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="92" type="taxi" depart="92.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="-E6 -E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="95" type="taxi" depart="95.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="-E7 -E6 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="96" type="taxi" depart="96.00">
+        <routeDistribution last="0">
+            <route cost="31.05" probability="1.00000000" edges="-E3 -E2 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="99" type="taxi" depart="99.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="100" type="taxi" depart="100.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="101" type="taxi" depart="101.00">
+        <routeDistribution last="0">
+            <route cost="14.75" probability="1.00000000" edges="E5 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="103" type="taxi" depart="103.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="-E6 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="106" type="taxi" depart="106.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="-E7 -E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="107" type="taxi" depart="107.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="108" type="taxi" depart="108.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="E0 E1 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="109" type="taxi" depart="109.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="-E2 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="111" type="taxi" depart="111.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="E0 E1 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="113" type="taxi" depart="113.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="E0 E1 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="114" type="taxi" depart="114.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="-E2 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="116" type="taxi" depart="116.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="E1 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="117" type="taxi" depart="117.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="-E3 -E2 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="119" type="taxi" depart="119.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="E1 E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="120" type="taxi" depart="120.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="-E7 -E6 E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="121" type="taxi" depart="121.00">
+        <routeDistribution last="0">
+            <route cost="29.16" probability="1.00000000" edges="E0 E1 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="123" type="taxi" depart="123.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="-E3 -E2 -E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="127" type="taxi" depart="127.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="130" type="taxi" depart="130.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="E5 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="131" type="taxi" depart="131.00">
+        <routeDistribution last="0">
+            <route cost="16.64" probability="1.00000000" edges="-E6 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="132" type="taxi" depart="132.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="E5 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="133" type="taxi" depart="133.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="E1 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="136" type="taxi" depart="136.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="E1 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="137" type="taxi" depart="137.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="-E2 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="141" type="taxi" depart="141.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="E1 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="143" type="taxi" depart="143.00">
+        <routeDistribution last="0">
+            <route cost="14.75" probability="1.00000000" edges="E5 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="144" type="taxi" depart="144.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="-E7 -E6 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="146" type="taxi" depart="146.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="E1 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="148" type="taxi" depart="148.00">
+        <routeDistribution last="0">
+            <route cost="31.05" probability="1.00000000" edges="-E7 -E6 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="152" type="taxi" depart="152.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="-E2 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="154" type="taxi" depart="154.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="E4 E5 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="156" type="taxi" depart="156.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="-E3 -E2 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="157" type="taxi" depart="157.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="E4 E5 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="158" type="taxi" depart="158.00">
+        <routeDistribution last="0">
+            <route cost="14.75" probability="1.00000000" edges="-E6 E2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="159" type="taxi" depart="159.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="-E2 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="160" type="taxi" depart="160.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="E5 E6 E7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="161" type="taxi" depart="161.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="E4 E5 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="164" type="taxi" depart="164.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="E4 E5 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="166" type="taxi" depart="166.00">
+        <routeDistribution last="0">
+            <route cost="21.96" probability="1.00000000" edges="E4 E5 -E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="167" type="taxi" depart="167.00">
+        <routeDistribution last="0">
+            <route cost="14.40" probability="1.00000000" edges="E5 E6"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="169" type="taxi" depart="169.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="-E7 -E6 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="174" type="taxi" depart="174.00">
+        <routeDistribution last="0">
+            <route cost="16.64" probability="1.00000000" edges="E1 -E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="181" type="taxi" depart="181.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="E1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="185" type="taxi" depart="185.00">
+        <routeDistribution last="0">
+            <route cost="28.81" probability="1.00000000" edges="E0 E1 E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="186" type="taxi" depart="186.00">
+        <routeDistribution last="0">
+            <route cost="13.89" probability="1.00000000" edges="E2 E3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="187" type="taxi" depart="187.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="-E6 -E1 -E0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="188" type="taxi" depart="188.00">
+        <routeDistribution last="0">
+            <route cost="23.84" probability="1.00000000" edges="E1 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="191" type="taxi" depart="191.00">
+        <routeDistribution last="0">
+            <route cost="6.68" probability="1.00000000" edges="-E5"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="192" type="taxi" depart="192.00">
+        <routeDistribution last="0">
+            <route cost="21.61" probability="1.00000000" edges="-E6 -E5 -E4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="195" type="taxi" depart="195.00">
+        <routeDistribution last="0">
+            <route cost="16.64" probability="1.00000000" edges="E5 E2"/>
+        </routeDistribution>
+    </vehicle>
+</routes>
