@@ -310,24 +310,24 @@ def run(train=True,model_name="model",epochs=50,steps=500,ard=False):
         plt.savefig(f'plots/time_vs_epoch_{model_name}.png')
         plt.show()
         
-        # Lista de tiempos totales de espera de vehículos
-        tiempos_espera = total_time_list
-        
-        # Calcular la media y el intervalo de confianza del 95%
-        media = np.mean(tiempos_espera)
-        desviacion_estandar = np.std(tiempos_espera)
-        n = len(tiempos_espera)
-        error = 1.96 * (desviacion_estandar / np.sqrt(n))  # 1.96 es el valor Z para un intervalo de confianza del 95%
-        
-        # Crear el gráfico de barras
-        plt.bar(1, media, yerr=error, color='blue', alpha=0.6, align='center', capsize=10)
-        plt.text(1, media + error + 0.5, f'{media:.2f}', ha='center', va='top')  # Añadir el valor medio encima de la barra
-        plt.xticks([])
-        plt.ylabel('Tiempo de espera medio [ms]')
-        plt.title('Tiempo de espera medio de vehículos con intervalo de confianza del 95%')
-        
-        # Mostrar el gráfico
-        plt.show()
+    # Lista de tiempos totales de espera de vehículos
+    tiempos_espera = total_time_list
+    
+    # Calcular la media y el intervalo de confianza del 95%
+    media = np.mean(tiempos_espera)
+    desviacion_estandar = np.std(tiempos_espera)
+    n = len(tiempos_espera)
+    error = 1.96 * (desviacion_estandar / np.sqrt(n))  # 1.96 es el valor Z para un intervalo de confianza del 95%
+    
+    # Crear el gráfico de barras
+    plt.bar(1, media, yerr=error, color='blue', alpha=0.6, align='center', capsize=10)
+    plt.text(1, media + error + 0.5, f'{media:.2f}', ha='center', va='top')  # Añadir el valor medio encima de la barra
+    plt.xticks([])
+    plt.ylabel('Tiempo de espera medio [ms]')
+    plt.title('Tiempo de espera medio de vehículos con intervalo de confianza del 95%')
+    
+    # Mostrar el gráfico
+    plt.show()
 
 
 def get_options():
@@ -378,4 +378,4 @@ if __name__ == "__main__":
     steps = options.steps
     ard = options.ard
     # run(train=train,model_name=model_name,epochs=epochs,steps=steps,ard=ard)
-    run(train=True,model_name="cruz_model_name_final",epochs=100,steps=200,ard=ard)
+    run(train=False,model_name="cruz_model_name_final",epochs=100,steps=200,ard=ard)
