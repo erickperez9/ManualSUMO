@@ -4,8 +4,8 @@
 echo ==============================================================
 echo ================ ACTUALIZACION DE PAQUETES ===================
 echo ==============================================================
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 sudo sudo apt install open-vm-tools-desktop
 
 echo ==============================================================
