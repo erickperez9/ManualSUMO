@@ -57,7 +57,7 @@ if test -d sumo; then
   echo "SUMO ya esta clonado."
 else
   sudo git clone --recursive https://github.com/eclipse-sumo/sumo
-  sudo tar -zxvf sumo.tgz
+  #sudo tar -zxvf sumo.tgz
 fi
 
 cd sumo
