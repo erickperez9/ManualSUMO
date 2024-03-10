@@ -1,49 +1,92 @@
 #!/bin/bash
 
 # Este script sirve para instalar SUMO a partir de la construccion de archivos binarios
+echo ==============================================================
+echo ================ ACTUALIZACION DE PAQUETES ===================
+echo ==============================================================
+sudo apt update
+sudo apt upgrade
+sudo sudo apt install open-vm-tools-desktop
 
-echo =================== ACTUALIZACION DE PAQUETES ===================
-sudo apt-get update
+echo ==============================================================
+echo =========== INSTALACION DE LIBRERIAS \(1\/6\) ===================
+echo ==============================================================
 
-echo ================ INSTALACION DE LIBRERIAS (1/5) =================
-sudo apt-get install git cmake python3 g++ libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgl2ps-dev python3-dev swig default-jdk maven libeigen3-dev
-
-echo ================ INSTALACION DE LIBRERIAS (2/5) =================
-sudo apt-get install ccache libavformat-dev libswscale-dev libopenscenegraph-dev python3-pip python3-setuptools
-
-echo ================ INSTALACION DE LIBRERIAS (3/5) =================
-sudo apt-get install libgtest-dev gettext tkdiff xvfb flake8 astyle python3-autopep8 pip3 install texttest
-
-echo ================ INSTALACION DE LIBRERIAS (4/5) =================
-sudo apt-get install python3-pandas python3-rtree python3-pyproj
-
-echo ================ INSTALACION DE LIBRERIAS (5/5) =================
-sudo apt-get install python3-pyproj python3-rtree python3-pandas python3-flake8 python3-autopep8 python3-scipy python3-pulp python3-ezdxf
+sudo apt install -y git cmake python3 g++ libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgl2ps-dev python3-dev swig default-jdk maven libeigen3-dev
 
 
+echo ==============================================================
+echo ============ INSTALACION DE LIBRERIAS \(2\/6\) ==================
+echo ==============================================================
+
+sudo apt install -y ccache libavformat-dev libswscale-dev libopenscenegraph-dev python3-pip python3-setuptools
+
+echo ==============================================================
+echo ============= INSTALACION DE LIBRERIAS \(3\/6\) ==============
+echo ==============================================================
+sudo apt install -y libgtest-dev gettext tkdiff xvfb flake8 astyle python3-autopep8
+
+echo ==============================================================
+echo ============= INSTALACION DE LIBRERIAS \(4\/6\) =================
+echo ==============================================================
+
+sudo apt install -y python3-pandas python3-rtree python3-pyproj
+
+echo ==============================================================
+echo ============= INSTALACION DE LIBRERIAS \(5\/6\) =================
+echo ==============================================================
+
+sudo apt install -y python3-pyproj python3-rtree python3-pandas python3-flake8 python3-autopep8 python3-scipy python3-pulp python3-ezdxf
+
+echo ==============================================================
+echo ============== INSTALACION DE LIBRERIAS \(6\/6\) ================
+echo ==============================================================
+
+sudo apt install -y python3-pandas python3-rtree python3-pyproj
+
+echo ==============================================================
+echo =================== CAMBIO DE DIRECTORIO =====================
+echo ==============================================================
+cd /opt
+echo "$PWD"
 
 echo =================================================================
+echo ========== DESCARGA SUMO DESDE EL REPOSITORIO  ===================
 echo =================================================================
-echo =================================================================
+if test -d sumo; then
+  echo "SUMO ya esta clonado."
+else
+  sudo git clone --recursive https://github.com/eclipse-sumo/sumo
+  sudo tar -zxvf sumo.tgz
+fi
 
-echo ================ DESCARGA DESDE EL REPOSITORIO  =================
-git clone --recursive https://github.com/eclipse-sumo/sumo
-
-echo ================ CAPTURA ADICIONAL (GIT FETCH) ==================
 cd sumo
-git fetch origin refs/replace/*:refs/replace/*
+echo "$PWD"
 
-echo ================ INSTALACION DE LIBRERIAS (1/2) =================
-pip install -r tools/requirements.txt
-
-echo ================ INSTALACION DE LIBRERIAS (2/2) =================
-sudo apt-get install python3-pandas python3-rtree python3-pyproj
-
-
-
-# El ultimo paso es exportar la variable de entorno dentro de la carpeta de descarga de sumo, esto se logra con:
-# export SUMO_HOME="$PWD"
+echo =================================================================
+echo ============ INSTALACION DE LIBRERIAS PYTHON ====================
+echo =================================================================
+sudo pip install -r tools/requirements.txt
+sudo pip install jupyterlab
 
 
-# O agregando el siguiente comando al final de los archivos: /etc/bash.bashrc y /home/<user>/.bashrc
-# export SUMO_HOME="/home/<user>/sumo-<version>"
+echo =================================================================
+echo ============ CONFIGURA SUMO_HOME ================================
+echo =================================================================
+export SUMO_HOME="$PWD"
+#sudo echo "export SUMO_HOME="$PWD"" >> ~/.bashrc
+#####sudo echo "export SUMO_HOME="$PWD"" >> /etc/bash.bashrc
+echo $SUMO_HOME
+
+echo =================================================================
+echo ============ INSTALACION DE SUMO ================================
+echo =================================================================
+
+sudo cmake -B build .
+sudo cmake --build build -j$(nproc)
+sudo cmake --install build
+sudo echo export SUMO_HOME="/usr/local/share/sumo/" >> ~/.bashrc
+source ~/.bashrc
+echo "OK"
+echo "Abra una nueva terminal y ejecute: sumo"
+exit 0
