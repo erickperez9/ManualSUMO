@@ -1,0 +1,12 @@
+1. crear archivo
+ 
+sudo gedit /etc/apt/preferences.d/firefox-no-snap
+
+
+2. agregar texto
+ 
+Package: firefox*
+Pin: release o=Ubuntu*
+Pin-Priority: -1
+
+3. ejecutar script reinstall_firefox.sh
