@@ -20,3 +20,16 @@ python3 plots-v1-4.py -i tripinfo.csv --columnas tripinfo_routeLength
 python3 plots-v1-4.py -i tripinfo.csv --columnas tripinfo_routeLength,emissions_CO2_abs
               
 python3 plots-v1-4.py -i tripinfo.csv --columnas tripinfo_routeLength,emissions_CO2_abs,tripinfo_duration
+
+
+#SUMO Visualization Tools
+
+python3 /opt/sumo/tools/visualization/plotXMLAttributes.py -x x -y y -s 1 -o name.png fcd.xml --scatterplot
+
+python3 /opt/sumo/tools/plot_trajectories.py -t xy -o name.png fcd.xml
+
+python3 /opt/sumo/tools/plot_trajectories.py -t xy --filter-ids 13 -o name.png fcd.xml
+
+python3 /opt/sumo/tools/plot_trajectories.py -t ts -o timeSpeed_output.png fcd.xml --filter-ids veh13
+
+python3 /opt/sumo/tools/visualization/plot_net_dump.py -v -n map.net.xml --measures density,density  --xlabel [m] --ylabel [m] --default-width 1 -i edgedata.xml,edgedata.xml --xlim 000,2600 --ylim 000,1500 --default-width .5 --min-color-value 0 --max-color-value 5 --max-width-value 5 --min-width-value 0  --max-width 3 --min-width .5 --colormap winter -o density-color-map.png
