@@ -8,6 +8,7 @@
 <device.emissions.probability value="1"/>
 </emissions>
 
+python3 /opt/sumo/tools/xml/xml2csv.py -s , tripinfo.xml
 
 pip3 install --upgrade numexpr
 pip3 install --upgrade bottleneck
