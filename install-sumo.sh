@@ -6,7 +6,7 @@ echo ================ ACTUALIZACION DE PAQUETES ===================
 echo ==============================================================
 sudo apt update -y
 sudo apt upgrade -y
-sudo sudo apt install open-vm-tools-desktop
+sudo sudo apt install -y open-vm-tools-desktop
 
 echo ==============================================================
 echo =========== INSTALACION DE LIBRERIAS \(1\/6\) ===================
